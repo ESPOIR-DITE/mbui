@@ -26,7 +26,7 @@ func Controllers(env *config.Env) http.Handler {
 func homeHandler(app *config.Env) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		files := []string{
-			app.Path + "index-updated.html",
+			app.Path + "index.html",
 		}
 		ts, err := template.ParseFiles(files...)
 		if err != nil {

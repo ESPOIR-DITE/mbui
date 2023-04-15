@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  nzedi-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: 0816048957docker/nzedi-api:latest
+    ports:
+      - 4000:4000
+
